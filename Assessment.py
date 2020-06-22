@@ -38,7 +38,6 @@ def ask_user(question):
     while not valid:
 
         response = input(question)
-        
         if response in encrypted:
             print('You chose: Encryption')
             return response
@@ -142,12 +141,14 @@ if ask1 in (str('1'),str('2')) or ask1 in yes_no:
 # if the option input for encryption is 3, the program will print the cesar cipher alphabet
 # based on user's key.
 if ask1 == str('3'):
-  for i in range(1):
-    print('\nYour Ciphered Alphabet Is:',alphabet1[keys:]+alphabet1[:keys])
+  start = alphabet1[keys:]
+  finish = alphabet1[:keys]
+  alphabet_cipher = start + finish
+  print('\nYour Ciphered Alphabet Is: '+alphabet_cipher)
 
 # If the option input of decryption is not 'n' or 'no' then the program will
 # go over the code that is meant to work for encryption option 1 and 2 or decryption answer 'yes'
-elif ask1 == 'y' or ask1 == 'yes' :
+elif ask1 == 'y' or ask1 == 'yes' or ask1 == '2' or ask1 == '1' :
     # The program will shift every letter in user text by using for i in v loop.
     for i in range(len(ask_text)):
             # Variables that work within a function
