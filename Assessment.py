@@ -51,8 +51,8 @@ def ask_user(question):
 cipher_text = []
 # Variables that store arrays of possible user inputs
 # Make shortcuts on words like:encryption,decryption and yes or no.
-encrypted = ('en', 'encryption', 'encrypt')
-decrypted = ('de', 'decryption', 'decrypt')
+encrypted = ('e','en', 'encryption', 'encrypt')
+decrypted = ('d','de', 'decryption', 'decrypt')
 agree = ('y', 'n', 'yes', 'no')
 
 # error message
